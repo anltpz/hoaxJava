@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+
 
 import lombok.Data;
 
@@ -17,7 +17,12 @@ public class User {
 	@GeneratedValue
 	private long id;
 	@NotNull(message = "Username boş olamaz")
+	
+	@NotNull
+	
+	@UniqueUsername
 	private String username;
+	
 	@NotNull(message = "Display boş olamaz")
 	private String displayName;
 	

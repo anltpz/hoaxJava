@@ -19,6 +19,7 @@ public class ApiError {
 		this.status = status;
 		this.message = message;
 		this.path = path;
+		
 	}
 	
 	
