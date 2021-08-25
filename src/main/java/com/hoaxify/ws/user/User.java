@@ -16,11 +16,11 @@ public class User {
 	@Id
 	@GeneratedValue
 	private long id;
-	@NotNull(message = "Username boş olamaz")
 	
-	@NotNull
 	
+
 	@UniqueUsername
+	@NotNull(message = "Username boş olamaz")
 	private String username;
 	
 	@NotNull(message = "Display boş olamaz")
