@@ -15,7 +15,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = {UniqueUserNamValidation.class })//Hangi class ile muhatap olucak
 public @interface UniqueUsername {
 
-	String message() default "Username sistemde kayıtlı";
+	String message() default "{hoaxify.constraints.uniqUsername.NotNull.message}";
 
 	Class<?>[] groups() default { };
 

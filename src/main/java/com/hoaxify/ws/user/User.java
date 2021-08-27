@@ -20,15 +20,16 @@ public class User {
 	
 
 	@UniqueUsername
-	@NotNull(message = "Username boş olamaz")
+	@NotNull(message = "{hoaxify.constraints.username.NotNull.message}")
 	private String username;
 	
-	@NotNull(message = "Display boş olamaz")
+	@NotNull(message = "{hoaxify.constraints.displayName.NotNull.message}")
 	private String displayName;
 	
 	@NotNull
 	@Pattern(regexp="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).*$")
 	
+	@NotNull
 	private String password;
 	
 	@Override
